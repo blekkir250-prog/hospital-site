@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title> 
+    <link rel="stylesheet" href="design-rev.css"> 
+</head>
+<body>
+    
+    <form action="/" id="review-form">
+        <div class="row">
+            <div class="form-group">
+                <label for="name">ваше имя:</label>
+                <input type="text" id="name" name="username" placeholder="текст. . ." required>
+            </div>
+
+            <div class="form-group2">
+                <label for="message">ваш отзыв:</label>
+                <input type="text" id="message" name="feedback" placeholder="текст. . ." required>
+            </div>
+
+            <div class="star-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+            <input type="hidden" id="rating-value" name="rating" value="0">
+                    
+            <input class="btn" type="submit" value="Отправить">
+        </div>
+    </form>
+
+    <script src="rev-inter.js"></script>
+</body>
+</html>

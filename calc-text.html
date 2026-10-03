@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виджет расчета стоимости товара</title>
+    <link rel="stylesheet" href="calc-des.css">
+</head>
+<body>
+
+    <div class="calc-widget">
+        <h2 class="calc-title">Расчет стоимости</h2>
+        
+        <div class="form-group">
+            <label class="form-label" for="product-model">Выберите модель</label>
+            <select id="product-model" class="form-select">
+                <option value="15000" selected>Модель Базовая — 15 000 ₽</option>
+                <option value="25000">Модель Стандарт — 25 000 ₽</option>
+                <option value="42000">Модель Премиум — 42 000 ₽</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <span class="form-label">Дополнительные опции</span>
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox-input option-checkbox" value="3500">
+                        <span class="option-text">Расширенная гарантия</span>
+                    </div>
+                    <span class="option-price">+3 500 ₽</span>
+                </label>
+                
+                <label class="checkbox-label">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox-input option-checkbox" value="5000">
+                        <span class="option-text">Быстрая доставка</span>
+                    </div>
+                    <span class="option-price">+5 000 ₽</span>
+                </label>
+
+                <label class="checkbox-label">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" class="checkbox-input option-checkbox" value="1500">
+                        <span class="option-text">Подарочная упаковка</span>
+                    </div>
+                    <span class="option-price">+1 500 ₽</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="total-container">
+            <span class="total-label">Итоговая стоимость:</span>
+            <span class="total-price" id="total-price">15 000 ₽</span>
+        </div>
+    </div>
+
+    <script src="calc-inter.js"></script>
+</body>
+</html>
+
+</head>
+<body>
+    
+</body>
+</html>

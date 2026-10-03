@@ -1,0 +1,588 @@
+/* 1. ОБЩИЕ СТИЛИ И ФОН */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px; 
+    margin-bottom: 50px;
+}
+
+body {
+    background-image: 
+        linear-gradient(to bottom, rgba(249, 249, 249, 0) 65%, rgba(0, 0, 0, 0.05) 85%, #e6f0fa 100%),
+        url("images.jpg");
+        
+    background-size: 
+        100% 100vh, 
+        100% 100vh, 
+        200% 200%; 
+    background-color: #e6f0fa;    
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+        
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.allhat {
+    backdrop-filter: blur(10px);
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1000px; 
+    width: 100%;  
+    background-color:rgba(1, 17, 111, 0.562);
+    padding: 20px 0;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0, 80, 112, 0.2);
+    border: 3px solid rgba(3, 16, 192, 0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.location a {
+    color: #bab8ff;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
+
+.location a:hover {
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(186, 184, 255, 0.6); 
+}
+
+
+.hat a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.85;
+    transition: all 0.3s ease; 
+}
+
+.hat a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.main-info {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.medimg {
+    margin-top: 80px;
+    flex: 1;
+    max-width: 500px;
+}               
+
+.hat a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.85;
+    transition: all 0.3s ease;
+}
+
+.hat a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.main-info {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.medimg {
+    margin-top: 80px;
+    flex: 1;
+    max-width: 500px;         
+}
+
+.large {
+    background-color: rgb(130, 188, 255);
+    width: fit-content; 
+    padding: 10px 20px; 
+    color: rgb(68, 68, 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.large h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.und {
+    font-size: 23px;
+    width: fit-content;
+    max-width: 500px;
+    background-color: rgb(187, 220, 255);
+    padding: 15px 20px; 
+    color: rgb(68, 68, 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    line-height: 1.5;
+}
+
+.price {
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto 0 auto; 
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px
+}
+
+.therapy {
+    background-color: rgb(187, 220, 255);
+    padding: 20px 25px; 
+    color: rgb(68, 68, 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.therapy:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.therapy h3 {
+    margin-top: 0;
+    color: rgb(30, 39, 90);
+    font-size: 24px;
+}
+
+.therapy p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.therapy h4 {
+    margin: 0;
+    font-size: 18px;
+    color: rgb(0, 80, 112);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 15px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+#avatar {
+    display: block;
+    width: 600px;
+    height: auto;
+    border-radius: 28px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25); 
+    transition: all 0.4s ease;
+}
+
+#avatar:hover {
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.doctors {    
+    margin-bottom: 100px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 35%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}    
+
+.doc1 {
+    display: block; 
+    width: 300px;
+    height: auto;
+    border-radius: 28px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+#man1 {
+    margin-left: 500px;
+    height: auto;
+    border-radius: 28px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.large {
+    background-color: rgb(130, 188, 255);
+    width: fit-content; 
+    padding: 10px 20px; 
+    color: rgb(68, 68, 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.large h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.und {
+    font-size: 23px;
+    width: fit-content;
+    max-width: 500px;
+    background-color: rgb(187, 220, 255);
+    padding: 15px 20px; 
+    color: rgb(68, 68, 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    line-height: 1.5;
+}
+
+.price {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto 0 auto; 
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+}
+
+.therapy {
+    background-color: rgb(187, 220, 255);
+    padding: 20px 25px; 
+    color: rgb(68, 68, 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.therapy:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.therapy h3 {
+    margin-top: 0;
+    color: rgb(30, 39, 90);
+    font-size: 24px;
+}
+
+.therapy p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.therapy h4 {
+    margin: 0;
+    font-size: 18px;
+    color: rgb(0, 80, 112);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 15px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.zagolovok {
+    background-color: rgb(187, 220, 255);
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    border-radius: 28px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.doctors {    
+    max-width: 1200px;
+    width: 100%;
+    margin: 350px auto 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+.doctors h2 {
+    color: rgb(30, 39, 90);
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.doctors .subtitle {
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+hr {
+    max-width: 57%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.doc1 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 30px;
+
+    background-color: rgb(187, 220, 255); 
+    padding: 25px;
+    border-radius: 28px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+    
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.doc-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.doc1 h4 {
+    margin: 0;
+    font-size: 20px;
+    color: rgb(0, 80, 112);
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 6px 16px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.doc-desc {
+    margin: 0;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.doc-avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.doc1:hover {
+    transform: translateY(-4px);
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.reviews {
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+}
+
+.rev {
+    background-color: rgb(187, 220, 255);
+    max-width: 610px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    padding: 3px 40px;
+    box-sizing: border-box;
+    position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 80, 112, 0.2);
+}
+
+.rev h2 {
+    text-align: center;
+}
+
+.review {
+    background-color: rgb(187, 220, 255);
+    padding-top: 3px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(68, 68, 68);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-weight: 700;
+}
+
+.leave-review {
+    justify-content: center;
+    text-align: center;
+    max-width: 150px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: rgb(0, 80, 112);
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 80, 112, 0.2);
+    transition: transform 0.3s ease; 
+}    
+
+.leave-review:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 80, 112, 0.3);
+}
+
+/* Главный контейнер футера */
+.hospital-footer {
+  background-color: #11161b; /* Очень темный сине-черный оттенок для дорогого вида */
+  color: #ffffff; /* Белый текст */
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Сетка для колонок */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Стили для каждой колонки */
+.footer-column {
+  flex: 1;
+  min-width: 220px; /* Чтобы на смартфонах колонки аккуратно вставали друг под друга */
+}
+
+/* Заголовки колонок (Основной синий цвет) */
+.footer-column h3 {
+  color: #2196f3; /* Яркий медицинский синий */
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #223140; /* Темно-синяя разделительная черта */
+  padding-bottom: 5px;
+}
+
+/* Списки ссылок */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+/* Ссылки (Светло-голубой цвет) */
+.footer-column ul li a {
+  color: #90caf9; /* Нежный светло-голубой тон */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Эффект при наведении на ссылку */
+.footer-column ul li a:hover {
+  color: #ffffff; /* При наведении ссылка подсвечивается белым */
+  text-decoration: underline;
+}
+
+/* Выделение экстренной связи (красный блок для привлечения внимания) */
+.emergency {
+  background: #2c1616;
+  padding: 10px;
+  border-left: 4px solid #ff5252;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Нижняя строчка копирайта */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #223140;
+  color: #64b5f6; /* Светло-голубой приглушенный текст */
+  font-size: 12px;
+  opacity: 0.7;
+}
